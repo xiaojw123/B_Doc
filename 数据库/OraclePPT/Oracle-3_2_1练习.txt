@@ -1,0 +1,72 @@
+0.求最高薪水
+
+1.谁挣的钱最多
+SELECT * 
+FROM emp 
+WHERE (NVL(sal,0)+NVL(comm,0))
+	=
+	(SELECT MAX(NVL(sal,0)+NVL(comm,0)) FROM emp);
+2.求出每一个部门里薪水最高的人
+SELECT *
+FROM emp
+WHERE (deptno,sal)
+   IN(
+           SELECT deptno,MAX(sal)
+           FROM emp
+           GROUP BY deptno
+   )
+
+3.部门的平均薪水大于2000的部门
+
+4.薪水大于1200的雇员按照部门编号进行分组，这些人分组之后的平均薪水必须大于1500，查询分组之后的平均薪水，按照薪水的降序排列
+	
+5.哪些人的工资位于所有人的平均工资之上
+
+6.求出每个部门平均工资的等级
+
+
+7.(参照第2题)求出每一个部门里薪水最高的人（如果一个部门最高薪水有多人的，显示comm最高的那个人）
+
+
+8.把每个员工以及他的经理人显示出来（包含没有经理人的员工）
+
+9.显示出所有部门的员工，以部门排序(将部门里没有员工的部门也显示出来)
+
+10.求出每个部门的员工工资等级的平均值：
+
+11.平均薪水最高的部门编号
+SELECT deptno 
+FROM (
+	SELECT deptno,AVG(sal) avg_sal 
+	FROM emp 
+	GROUP BY deptno
+) t
+WHERE avg_sal=(
+	SELECT MAX(AVG(sal)) avg_sal 
+	FROM emp 
+	GROUP BY deptno
+	)
+-----------------
+SELECT deptno 
+FROM emp 
+GROUP BY deptno 
+HAVING AVG(sal)=(
+		SELECT MAX(AVG(sal)) 
+		FROM emp 
+		GROUP BY deptno)
+12.平均薪水最高的部门名称
+SELECT dname
+FROM dept
+WHERE deptno IN
+(
+	SELECT deptno 
+	FROM emp 
+	GROUP BY deptno 
+	HAVING AVG(sal)=(
+		SELECT MAX(AVG(sal)) 
+		FROM emp 
+		GROUP BY deptno)
+)
+--------------
+
+13.

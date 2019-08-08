@@ -1,0 +1,110 @@
+教师关系(Teachers):		T(tno, tname, title)
+课程关系(Courses):		C(cno, cname, tno)
+学生关系(Students):		S(sno, sname, age, sex)
+选课关系(student_course):	SC(sno, cno, score)
+
+一、建表，添加表的注释及表之间的约束，将下列数据插入表中(4*6分=24分)
+
+
+INSERT INTO t VALUES ('T0002', 'SHI', '教授');
+INSERT INTO t VALUES ('T0003', 'LI', '副教授');
+INSERT INTO t VALUES ('T0001', 'DAI', '讲师');
+INSERT INTO t VALUES ('T0004', 'GU', '讲师');
+
+INSERT INTO c VALUES ('C0004', 'C++', 'T0002');
+INSERT INTO c VALUES ('C0001', 'C', 'T0002');
+INSERT INTO c VALUES ('C0002', 'DB', 'T0003');
+INSERT INTO c VALUES ('C0003', 'OS', 'T0003');
+
+INSERT INTO s VALUES ('S10001', 'WANG', 20,1);
+INSERT INTO s VALUES ('S10004', 'LIU', 18,0);
+INSERT INTO s VALUES ('S10003', 'XIA', 19,0);
+INSERT INTO s VALUES ('S10002', 'HU', 17,1);
+
+INSERT INTO sc VALUES ('S10001', 'C0001', 80);
+INSERT INTO sc VALUES ('S10001', 'C0002', 60);
+INSERT INTO sc VALUES ('S10001', 'C0003', 70);
+INSERT INTO sc VALUES ('S10004', 'C0004', 90);
+INSERT INTO sc VALUES ('S10002', 'C0001', 85);
+INSERT INTO sc VALUES ('S10002', 'C0002', 75);
+
+二、检索题(8*7分=56分)
+1、检索学习课程号为C0002课程的学生学号和姓名。
+
+
+2、检索学习课程号为C0002课程的学生学号和成绩。
+
+
+3、检索至少选修LI老师所授课程中的一门课程的学生学号和姓名。
+
+
+4、检索选修课程号为C0002或C0004课程的学生学号。
+
+
+5、检索至少选修课程号为C0002和C0004课程的学生学号、姓名、性别。
+SELECT * 
+FROM s 
+WHERE EXISTS(
+	SELECT 1 
+	FROM sc 
+	WHERE s.sno=sc.sno AND cno IN('C0002','C0004') 
+	GROUP BY sc.sno 
+	HAVING COUNT(1)=2
+);
+SELECT * 
+FROM s 
+WHERE EXISTS(
+	SELECT 1 
+	FROM sc 
+	WHERE s.sno=sc.sno AND cno='C0002'
+) AND EXISTS(
+	SELECT 1
+	FROM sc
+	WHERE s.sno=sc.sno AND cno='C0004')
+/
+
+
+6、检索不学C0002课程的学生姓名与年龄。
+
+
+7、检索学习全部课程的学生姓名。
+
+
+8、检索学习S10003学生所学的全部课程的学生学号。
+
+9、查询“C0001”课程比“C0002”课程成绩高的所有学生的信息（要求学生的性别显示中文的男或女）。
+
+三、创建视图(2*10分=20分)
+学生视图(选了课的学生信息)：STUDENT_VIEW(SNO, SNAME, CNO, CNAME, SCORE, TNO, TNAME)
+教师视图(没选课的信息也显示出来)：TEACHER_VIEW(TNO, TNAME, CNO, CNAME, SNO, SNAME, SCORE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
