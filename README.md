@@ -2,7 +2,7 @@
 
 
 
-###    Android Native
+#####    Android Native
 
 1. Hook  逆向   （需兼容Android Q对API反射修改） 
 
@@ -19,12 +19,12 @@
    
 
 2. 组件化 
-
 3. jetpack
-
 4. 自定义View- LayoutManager
+5. 音视频编解码
+6. mk文件
 
-###   跨平台
+#####   跨平台
 
 1. Flutter DartPad 
 
@@ -47,6 +47,8 @@
 ##### ADB
 
 ##### Gradle
+
+配置文件https://www.cnblogs.com/Im-Victor/p/10789780.html
 
 ##### 其他
 
