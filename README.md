@@ -10,11 +10,13 @@
    ● jetpack
    
      AAC框架  MVVM演变
+     
    ● 组件化
    
      ARouter
 2. UI
    ● 自定义View
+   
      LayoutManager
 
 3. Hook  逆向   （需兼容Android Q对API反射修改） 
