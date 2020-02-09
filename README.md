@@ -4,7 +4,18 @@
 
 #####    Android Native
 
-1. Hook  逆向   （需兼容Android Q对API反射修改） 
+
+   
+1. 框架
+   ● jetpack   
+     AAC框架  MVVM演变
+   ● 组件化  
+     ARouter
+2. UI
+   ● 自定义View
+     LayoutManager
+
+3. Hook  逆向   （需兼容Android Q对API反射修改） 
 
     ● Activiyt启动
 
@@ -16,15 +27,13 @@
 
     https://www.cnblogs.com/linghu-java/p/9671230.html 
 
-   
-
-2. 组件化  ARouter
-3. jetpack   AAC框架
-4. 自定义View- LayoutManager
-5. 音视频编解码   ffmpeg
-6. 构建打包
-   APK mk文件
-7. 源码
+4. 音视频
+     ● 编解码   ffmpeg
+5. 构建打包
+     ● APK mk文件
+6. 源码
+     ● framework
+7. 算法
 
 #####   跨平台
 
@@ -35,7 +44,10 @@
 3.  Web(前端、微信小程序) 
 
 4.  uniapp
-   
+
+#####  扩展
+1.  IOS
+2.  后端
 
    
 
