@@ -7,9 +7,11 @@
 
    
 1. 框架
-   ● jetpack   
+   ● jetpack
+   
      AAC框架  MVVM演变
-   ● 组件化  
+   ● 组件化
+   
      ARouter
 2. UI
    ● 自定义View
