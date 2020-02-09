@@ -7,6 +7,7 @@
 
    
 1. 框架
+
    ● jetpack
    
      AAC框架  MVVM演变
@@ -15,6 +16,7 @@
    
      ARouter
 2. UI
+
    ● 自定义View
    
      LayoutManager
@@ -32,11 +34,15 @@
     https://www.cnblogs.com/linghu-java/p/9671230.html 
 
 4. 音视频
-     ● 编解码   ffmpeg
+    
+    ● 编解码   ffmpeg
 5. 构建打包
-     ● APK mk文件
+    
+    ● APK mk文件
 6. 源码
-     ● framework
+    
+    ● framework
+
 7. 算法
 
 #####   跨平台
@@ -50,7 +56,9 @@
 4.  uniapp
 
 #####  扩展
+
 1.  IOS
+
 2.  后端
 
    
