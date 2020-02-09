@@ -18,20 +18,23 @@
 
    
 
-2. 组件化 
-3. jetpack
+2. 组件化  ARouter
+3. jetpack   AAC框架
 4. 自定义View- LayoutManager
-5. 音视频编解码
-6. mk文件
+5. 音视频编解码   ffmpeg
+6. 构建打包
+   APK mk文件
+7. 源码
 
 #####   跨平台
 
 1. Flutter DartPad 
 
-2.  RN 
+2.  React Native 
 
 3.  Web(前端、微信小程序) 
 
+4.  uniapp
    
 
    
