@@ -33,6 +33,7 @@
 
     https://www.cnblogs.com/linghu-java/p/9671230.html 
 
+<<<<<<< HEAD
 4. 音视频
     
     ● 编解码   ffmpeg
@@ -44,6 +45,47 @@
     ● framework
 
 7. 算法
+=======
+  
+
+2. 组件化 
+
+3. jetpack
+
+4. 控件
+
+   MaterialDesin  嵌套滑动 
+
+5. 自定义View- LayoutManager
+
+6. 源码
+
+   ● View原理
+
+   https://blog.csdn.net/future234/article/details/81160380
+
+7. 音视频编解码  
+
+8. mk文件, APK编译、生成，解析、安装
+
+9. spport->androidx库迁移
+
+10. kotlin 深入
+
+##### Java
+
+1. 算法 
+
+    ● 排序
+
+    ● 二分查找
+
+    ● 红黑树
+
+2. JVM
+
+   
+>>>>>>> 1508e86f8b57a56a00183e6f34ad4440cb54f4c9
 
 #####   跨平台
 
@@ -67,7 +109,7 @@
 
 ##### Git
 
-1. git push -u origin dev 强制推送
+1. git push -f origin dev 强制推送
 
 2. git filter-branch 
 
@@ -76,6 +118,8 @@
 ##### Gradle
 
 配置文件https://www.cnblogs.com/Im-Victor/p/10789780.html
+
+ gradlew 模块名：dependencies
 
 ##### 其他
 
