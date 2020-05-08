@@ -27,13 +27,15 @@
 
     ● 未注册检查Actvivity Not Find异常
 
-    ● 点击事件拦截
+    ●点击事件拦截
 
     https://blog.csdn.net/gdutxiaoxu/article/details/81459910 
 
     https://www.cnblogs.com/linghu-java/p/9671230.html 
+    ●AspectJX
+    
 
-<<<<<<< HEAD
+
 4. 音视频
     
     ● 编解码   ffmpeg
@@ -45,7 +47,7 @@
     ● framework
 
 7. 算法
-=======
+
   
 
 2. 组件化 
