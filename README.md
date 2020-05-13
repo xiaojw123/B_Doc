@@ -5,13 +5,13 @@
 #####    Android Native
 
 
-   
+
 1. 框架
 
    ● jetpack
    
      AAC框架  MVVM演变
-     
+   
    ● 组件化
    
      ARouter
@@ -37,13 +37,17 @@
 
 
 4. 音视频
-    
+   
     ● 编解码   ffmpeg
+    
 5. 构建打包
-    
+   
     ● APK mk文件
-6. 源码
     
+    ●ART和Dalvik 
+    
+6. 源码
+   
     ● framework
 
 7. 算法
@@ -85,9 +89,6 @@
     ● 红黑树
 
 2. JVM
-
-   
->>>>>>> 1508e86f8b57a56a00183e6f34ad4440cb54f4c9
 
 #####   跨平台
 
