@@ -118,6 +118,10 @@
 
 ##### ADB
 
+1. adb shell dumpsys window | findstr mCurrentFocus  
+
+查看当前运行的包名和Activity
+
 ##### Gradle
 
 配置文件https://www.cnblogs.com/Im-Victor/p/10789780.html
